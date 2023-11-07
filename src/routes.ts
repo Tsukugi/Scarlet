@@ -14,7 +14,7 @@ const handleRepoErrors = async <T, R extends express.Response>(
         response.json(result);
         return;
     }
-    response.status(404);
+    response.status(404).json({ error: "Resource not found" });
 };
 
 router.get("/book/:id", async (req, res) => {
