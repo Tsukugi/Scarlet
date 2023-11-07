@@ -1,10 +1,15 @@
 {
     "name": "scarlet",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A server to centralize requests to different repositories",
     "main": "app.js",
     "scripts": {
-        "test": "test"
+        "lint": "eslint src --ext .ts --fix",
+        "prettier:check": "npx prettier --check .",
+        "prettier:write": "npx prettier --write .",
+        "build": "npx tsc --verbose --build",
+        "test": "test",
+        "prepare": "npm run build"
     },
     "keywords": [
         "nodejs",
