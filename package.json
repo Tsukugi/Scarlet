@@ -1,6 +1,6 @@
 {
     "name": "scarlet",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "A server to centralize requests to different repositories",
     "main": "app.js",
     "scripts": {
